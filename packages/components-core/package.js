@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'project-app',
+  name: 'components-core',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -11,16 +11,32 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2');
+  api.versionsFrom('1.2.1');
   var c = 'client',
       s = 'server',
       cs = [c, s];
 
-  api.imply([
+  api.use([
     'ui',
     'templating',
-    'project-core',
-    'project-profile',
-    'project-app-ui'
-  ]);
+    'iron:router',
+    'session'
+  ], c);
+
+  api.addFiles([
+    'namespace.js',
+    'validators.js'
+  ], cs);
+
+  api.addFiles([
+    'layout.html',
+    'layout.js',
+    'head.html'
+  ], c);
+
+  api.addFiles([
+    'router.js'
+  ], c);
+
+  api.export('CE');
 });

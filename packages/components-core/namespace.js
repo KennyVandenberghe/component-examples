@@ -1,4 +1,4 @@
-Project = {
+CE = {
   Validators: {},
   Schemas: {},
   Namespaces: {},

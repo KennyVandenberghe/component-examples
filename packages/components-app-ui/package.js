@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'project-core',
+  name: 'components-app-ui',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -11,32 +11,22 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2');
+  api.versionsFrom('1.2.1');
   var c = 'client',
       s = 'server',
       cs = [c, s];
 
   api.use([
-    'ui',
-    'templating',
-    'iron:router',
-    'session'
+    'rvn:light'
   ], c);
 
-  api.addFiles([
-    'namespace.js',
-    'validators.js'
+  api.use([
+    'components-core'
   ], cs);
 
   api.addFiles([
-    'layout.html',
-    'layout.js',
-    'head.html'
+    'client.js'
   ], c);
 
-  api.addFiles([
-    'router.js'
-  ], c);
-
-  api.export('Project');
+  api.export('CE');
 });

@@ -1,14 +1,14 @@
-Template.projectLogin.onCreated(function(){
+Template.componentsLogin.onCreated(function(){
   Session.setDefault('showLogin', true);
 });
 
-Template.projectLogin.helpers({
+Template.componentsLogin.helpers({
   showLogin: function() {
     return Session.get('showLogin');
   }
 });
 
-Template.projectLogin.events({
+Template.componentsLogin.events({
   'click .register': function(e, tpl) {
     e.preventDefault();
     var email = $('[name=email]').val();

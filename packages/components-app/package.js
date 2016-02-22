@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'project-app-ui',
+  name: 'components-app',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -16,18 +16,14 @@ Package.onUse(function(api) {
       s = 'server',
       cs = [c, s];
 
-  api.use([
+  api.imply([
     'ui',
-    'templating'
+    'templating',
+    'components-core',
+    'components-profile',
+    'rvn:light',
+    'rvn:mdl',
+    'rvn:overlay',
+    'components-app-ui'
   ], c);
-
-  api.use([
-    'project-core'
-  ], cs);
-
-  api.addFiles([
-    'client.js'
-  ], c);
-
-  api.export('Project');
 });

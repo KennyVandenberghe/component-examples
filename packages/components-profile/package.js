@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'project-profile',
+  name: 'components-profile',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -21,7 +21,7 @@ Package.onUse(function(api) {
   ], cs);
 
   api.use([
-    'project-core',
+    'components-core',
     'underscore',
     'momentjs:moment',
     'dburles:collection-helpers@1.0.2',
@@ -31,7 +31,7 @@ Package.onUse(function(api) {
   api.use([
     'ui',
     'templating',
-    
+
     'deps'
   ], c);
 
