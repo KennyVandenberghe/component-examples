@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'components-app',
+  name: 'components-dashboard',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -16,15 +16,18 @@ Package.onUse(function(api) {
       s = 'server',
       cs = [c, s];
 
-  api.imply([
-    'ui',
+  api.use([
     'templating',
-    'components-core',
-    'components-profile',
-    'components-dashboard',
-    'rvn:light',
-    'rvn:mdl',
-    'rvn:overlay',
-    'components-app-ui'
+    'iron:router'
+  ], c);
+
+  api.use([
+    'components-core'
+  ], cs);
+
+  api.addFiles([
+    'components/dashboard.html',
+    'components/dashboard.js',
+    'router.js'
   ], c);
 });

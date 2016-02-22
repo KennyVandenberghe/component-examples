@@ -17,6 +17,7 @@ check@1.1.0
 components-app@0.0.1
 components-app-ui@0.0.1
 components-core@0.0.1
+components-dashboard@0.0.1
 components-profile@0.0.1
 dburles:collection-helpers@1.0.4
 ddp@1.2.2
