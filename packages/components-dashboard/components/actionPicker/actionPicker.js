@@ -1,4 +1,4 @@
-Template.componentsDashboard.onCreated(function(){
+Template.componentsActionPicker.onCreated(function(){
   actionPicker = new Rvn.mdlActionPicker({
     mainItem:
       {
@@ -37,7 +37,7 @@ Template.componentsDashboard.onCreated(function(){
     ]
   });
 });
-Template.componentsDashboard.helpers({
+Template.componentsActionPicker.helpers({
   actionPickerContext: function() {
     return {
       mdlActionPicker: actionPicker

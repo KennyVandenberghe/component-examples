@@ -27,7 +27,10 @@ Package.onUse(function(api) {
 
   api.addFiles([
     'components/dashboard.html',
-    'components/dashboard.js',
+    'components/actionPicker/actionPicker.html',
+    'components/actionPicker/actionPicker.js',
+    'components/list/list.html',
+    'components/list/list.js',
     'router.js'
   ], c);
 });
