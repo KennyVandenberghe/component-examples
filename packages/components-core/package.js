@@ -29,12 +29,6 @@ Package.onUse(function(api) {
   ], cs);
 
   api.addFiles([
-    'layout.html',
-    'layout.js',
-    'head.html'
-  ], c);
-
-  api.addFiles([
     'router.js'
   ], c);
 

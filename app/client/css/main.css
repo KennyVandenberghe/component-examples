@@ -80,6 +80,9 @@
   .login-container > .mdl-button {
     margin-top: 20px; }
 
+.logout {
+  cursor: pointer; }
+
 html {
   font-size: 18px; }
   @media (max-width: 1400px) {

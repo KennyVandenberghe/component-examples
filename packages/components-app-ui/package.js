@@ -17,7 +17,8 @@ Package.onUse(function(api) {
       cs = [c, s];
 
   api.use([
-    'rvn:light'
+    'rvn:light',
+    'templating'
   ], c);
 
   api.use([
@@ -25,6 +26,11 @@ Package.onUse(function(api) {
   ], cs);
 
   api.addFiles([
+    'components/layout.html',
+    'components/layout.js',
+    'components/head.html',
+    'components/header.html',
+    'components/header.js',
     'client.js'
   ], c);
 

@@ -1,18 +1,7 @@
 <template name="componentsLayout">
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 		{{#if currentUser}}
-			<header class="mdl-layout__header">
-		    <div class="mdl-layout__header-row">
-		      <span class="mdl-layout-title">PappApp</span>
-		      <div class="mdl-layout-spacer"></div>
-		      <nav class="mdl-navigation ">
-		        <!-- <span class="mdl-navigation__link" href="">{{> loginButtons}}</span> -->
-						{{#if currentUser}}
-							<span class="mdl-navigation__link logout" href="#">logout</span>
-						{{/if}}
-		      </nav>
-		    </div>
-		  </header>
+			{{> componentsHeader}}
 		  <div class="mdl-layout__drawer">
 		    <span class="mdl-layout-title">PappApp</span>
 		    <nav class="mdl-navigation">
