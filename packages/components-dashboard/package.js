@@ -33,6 +33,16 @@ Package.onUse(function(api) {
     'components/list/list.js',
     'components/header/header.html',
     'components/header/header.js',
+    'components/dropdown/dropdown.html',
+    'components/dropdown/dropdown.js',
+    'components/tabbar/tabbar.html',
+    'components/tabbar/tabbar.js',
+    'components/dialog/dialog.html',
+    'components/dialog/dialog.js',
+    'components/snackbar/snackbar.html',
+    'components/snackbar/snackbar.js',
+    'components/overlay/overlay.html',
+    'components/overlay/overlay.js',
     'router.js'
   ], c);
 });
