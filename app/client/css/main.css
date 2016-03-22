@@ -111,11 +111,15 @@
       .overlay .overlay-container > .infosection > *:not(.no-pane-margin) {
         margin: 30px;
         box-sizing: border-box; }
-    .overlay .overlay-container > .button-container {
-      -webkit-flex: 0 0 2%;
-      flex: 0 0 2%;
-      text-align: center;
-      padding: 20px; }
+  .overlay > .button-container {
+    -webkit-flex: 0 0 2%;
+    flex: 0 0 2%;
+    text-align: center;
+    padding: 20px; }
+    .overlay > .button-container > .close {
+      position: absolute;
+      top: 10px;
+      right: 10px; }
 
 .overlay-mask {
   top: 0;
@@ -206,6 +210,37 @@
 
 .tab-bar-container > .tab-bar-right-button i {
   color: #fff; }
+
+.mdl-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  text-align: center; }
+  .mdl-carousel > .carousel-wrapper {
+    width: 300%; }
+    .mdl-carousel > .carousel-wrapper > .carousel-item {
+      float: left; }
+  .mdl-carousel > .carousel-previous {
+    position: absolute;
+    left: 10px;
+    top: calc(50% - 14px);
+    cursor: pointer; }
+  .mdl-carousel > .carousel-next {
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 14px);
+    cursor: pointer; }
+  .mdl-carousel > .carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    .mdl-carousel > .carousel-indicators > i {
+      color: gainsboro;
+      font-size: 0.6em; }
+      .mdl-carousel > .carousel-indicators > i.-active {
+        color: #606060; }
 
 .login-container {
   position: absolute;

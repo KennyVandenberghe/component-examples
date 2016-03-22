@@ -43,6 +43,9 @@ Package.onUse(function(api) {
     'components/snackbar/snackbar.js',
     'components/overlay/overlay.html',
     'components/overlay/overlay.js',
+    'components/carousel/carousel.html',
+    'components/datePicker/datePicker.html',
+    'components/datePicker/datePicker.js',
     'router.js'
   ], c);
 });
